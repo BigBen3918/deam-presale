@@ -1,0 +1,83 @@
+@import "index.scss";
+
+
+.form{
+    position:fixed;
+    width:50%;
+    left:25%;
+    border:1px solid rgb(15, 125, 83);
+    min-height:500px;
+    top:20%;
+    background-color: #172a2be9;
+    padding: 1em;
+    overflow: hidden;
+    @media (max-width: 768px) {
+        width: 100%;
+        left: 0;
+        top: 15%;
+    }
+}
+.logo{
+    z-index: 10000;
+    position: fixed;
+    img{
+        width: 50px;
+        margin: 0 1em;
+    }
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    color: #eee;
+}
+
+.button-submit{
+    border: none;
+    padding: 0.6em;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(3, 61, 116);
+    background-color:var(--default-color-1);
+    transition: 0.2s;
+    font-size: 1.2em;
+    &:hover{
+        background-color: rgb(9, 79, 145);
+    }
+}
+
+.progress{
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(32, 73, 98);
+    width: 100%;
+    margin-top: 1em;
+    position: relative;
+    overflow: hidden;
+    .pro{
+        position: absolute;
+        top:0;
+        left: 0;
+        background: linear-gradient(to left,var(--default-color-1), white);
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.line{
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0;
+    text-align: center;
+    &.red{
+        background-color: red;
+    }
+    &.white{
+        background-color: white;
+    }
+    &.blue{
+        background-color: var(--default-color-1);
+    }
+}
